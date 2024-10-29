@@ -1,7 +1,7 @@
 # CSAS 2025 Data Challenge
-
 Reference: https://statds.org/events/csas2025/challenge.html
-
+## Requirements
+- Python 3.11.6
 
 ### Challenge Summary
 The goal is to use data on bat speed and swing length to analyze some aspects of the pitcher/batter interaction.
