@@ -280,3 +280,9 @@ The change in Win Expectancy before the Plate Appearance and after the Plate App
 
 ### delta_run_exp
 The change in Run Expectancy before the Pitch and after the Pitch
+
+### swing_length
+The total (sum) distance in feet traveled of the head of the bat in X/Y/Z space, from start of tracking data until impact point.
+
+### bat_speed
+Bat speed is measured at the sweet-spot of the bat. Average bat speed is the average of the top 90% of a player’s swings.

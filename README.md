@@ -1,5 +1,7 @@
 # CSAS 2025 Data Challenge
 Reference: https://statds.org/events/csas2025/challenge.html
+Background: https://technology.mlblogs.com/introducing-statcast-2023-high-frame-rate-bat-and-biomechanics-tracking-3844890264a6
+
 ## Requirements
 - Python 3.11.6
 
