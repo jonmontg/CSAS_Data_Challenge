@@ -73,16 +73,35 @@ def _parse_description_lookup(definition_file):
         lookup[field] = lookup[field] + line + "<br>"
   return lookup
 
-def _build_numeric_plots(df, path):
+def _create_box_plot(df, column, path):
+  sns.boxplot(data=df, x=column.name)
+  plt.savefig(path / f"{column.name}_box.png")
+  plt.close()
+
+def _create_hist_plot(df, column, path, rotate=False):
+  sns.histplot(data=df, x=column.name)
+  plt.savefig(path / f"{column.name}_freq.png")
+  if rotate:
+    plt.xticks(rotation=90)
+  plt.close()
+
+def _build_plots(df, path, cat_len_limit):
+  processes = []
   for column in df:
     if column.dtype.is_numeric():
-      sns.boxplot(data=df, x=column.name)
-      plt.savefig(path / f"{column.name}_box.png")
-      plt.close()
+      p1 = Process(target=_create_box_plot, args=(df, column, path))
+      p2 = Process(target=_create_hist_plot, args=(df, column, path))
+      processes.append(p1)
+      processes.append(p2)
+      p1.start()
+      p2.start()
 
-      sns.histplot(data=df, x=column.name)
-      plt.savefig(path / f"{column.name}_freq.png")
-      plt.close()
+    elif column.dtype == pl.Categorical and len(column.unique()) <= cat_len_limit:
+      p = Process(target=_create_hist_plot, args=(df, column, path, True))
+      processes.append(p)
+      p.start()
+  for p in processes:
+    p.join()
 
 def build_description_table(df, definition_file, output_file, short_cat_size=30, long_cat_show_size=5, build_plots=False):
   """
@@ -91,7 +110,7 @@ def build_description_table(df, definition_file, output_file, short_cat_size=30,
   """
   lookup = _parse_description_lookup(definition_file)
   if build_plots:
-    _build_numeric_plots(df, Path(os.path.dirname(output_file)) / "assets")
+    _build_plots(df, Path(os.path.dirname(output_file)) / "assets", short_cat_size)
   with HtmlBuilder() as html:
     with html.tag("table", border="1"):
       with html.tag("tr"):
@@ -120,6 +139,8 @@ def build_description_table(df, definition_file, output_file, short_cat_size=30,
                       html.text(opt)
                 if len(uniq) > show_size:
                   html.text("...")
+                else:
+                  html.text("<img src=\"{path}\">".format(path=Path('assets', f"{column.name}_freq.png")))
             elif column.dtype.is_numeric():
               html.text("<img src=\"{path}\">".format(path=Path('assets', f"{column.name}_box.png")))
               html.text("<img src=\"{path}\">".format(path=Path('assets', f"{column.name}_freq.png")))

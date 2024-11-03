@@ -78,6 +78,7 @@
         <li >
           ""
         </li>
+        <img src="assets/pitch_type_freq.png">
       </ul>
     </td>
   </tr>
@@ -350,6 +351,7 @@
         <li >
           triple_play
         </li>
+        <img src="assets/events_freq.png">
       </ul>
     </td>
   </tr>
@@ -406,6 +408,7 @@
         <li >
           bunt_foul_tip
         </li>
+        <img src="assets/description_freq.png">
       </ul>
     </td>
   </tr>
@@ -462,6 +465,7 @@
         <li >
           R
         </li>
+        <img src="assets/stand_freq.png">
       </ul>
     </td>
   </tr>
@@ -485,6 +489,7 @@
         <li >
           L
         </li>
+        <img src="assets/p_throws_freq.png">
       </ul>
     </td>
   </tr>
@@ -592,6 +597,7 @@
         <li >
           BOS
         </li>
+        <img src="assets/home_team_freq.png">
       </ul>
     </td>
   </tr>
@@ -699,6 +705,7 @@
         <li >
           WSH
         </li>
+        <img src="assets/away_team_freq.png">
       </ul>
     </td>
   </tr>
@@ -725,6 +732,7 @@
         <li >
           B
         </li>
+        <img src="assets/type_freq.png">
       </ul>
     </td>
   </tr>
@@ -774,6 +782,7 @@
         <li >
           line_drive
         </li>
+        <img src="assets/bb_type_freq.png">
       </ul>
     </td>
   </tr>
@@ -1032,6 +1041,7 @@
         <li >
           Bot
         </li>
+        <img src="assets/inning_topbot_freq.png">
       </ul>
     </td>
   </tr>
@@ -1868,6 +1878,7 @@
         <li >
           ""
         </li>
+        <img src="assets/pitch_name_freq.png">
       </ul>
     </td>
   </tr>
@@ -2030,6 +2041,7 @@
         <li >
           ""
         </li>
+        <img src="assets/if_fielding_alignment_freq.png">
       </ul>
     </td>
   </tr>
@@ -2056,6 +2068,7 @@
         <li >
           ""
         </li>
+        <img src="assets/of_fielding_alignment_freq.png">
       </ul>
     </td>
   </tr>
