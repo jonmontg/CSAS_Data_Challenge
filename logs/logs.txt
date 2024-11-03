@@ -1,8 +1,8 @@
 DEBUG - Reading data from data/statcast_pitch_swing_data_20240402_20240630.arrow.
 INFO - Column pitch_type converted to Categorical. Found 17 categories.
 INFO - Column player_name converted to Categorical. Found 559 categories.
-INFO - Column batter converted to UInt32. Max value found is 808982.
-INFO - Column pitcher converted to UInt32. Max value found is 814005.
+INFO - Column batter converted to Categorical. Found 559 categories.
+INFO - Column pitcher converted to Categorical. Found 689 categories.
 INFO - Column events converted to Categorical. Found 30 categories.
 INFO - Column description converted to Categorical. Found 13 categories.
 INFO - Column zone converted to UInt8. Max value found is 14.
@@ -15,9 +15,9 @@ INFO - Column hit_location converted to UInt8. Max value found is 9.
 INFO - Column bb_type converted to Categorical. Found 5 categories.
 INFO - Column balls converted to UInt8. Max value found is 3.
 INFO - Column strikes converted to UInt8. Max value found is 2.
-INFO - Column on_3b converted to UInt32. Max value found is 808982.
-INFO - Column on_2b converted to UInt32. Max value found is 808982.
-INFO - Column on_1b converted to UInt32. Max value found is 808982.
+INFO - Column on_3b converted to Categorical. Found 524 categories.
+INFO - Column on_2b converted to Categorical. Found 537 categories.
+INFO - Column on_1b converted to Categorical. Found 543 categories.
 INFO - Column outs_when_up converted to UInt8. Max value found is 2.
 INFO - Column inning converted to UInt8. Max value found is 14.
 INFO - Column inning_topbot converted to Categorical. Found 2 categories.
@@ -26,15 +26,15 @@ INFO - Column hit_distance_sc converted to UInt16. Max value found is 512.
 INFO - Column launch_angle converted to Int8. Found range (-89-90).
 INFO - Column release_spin_rate converted to UInt16. Max value found is 3578.
 INFO - Column game_pk converted to UInt32. Max value found is 747220.
-INFO - Column pitcher_1 converted to UInt32. Max value found is 814005.
-INFO - Column fielder_2_1 converted to UInt32. Max value found is 700250.
-INFO - Column fielder_3 converted to UInt32. Max value found is 702358.
-INFO - Column fielder_4 converted to UInt32. Max value found is 702616.
-INFO - Column fielder_5 converted to UInt32. Max value found is 702358.
-INFO - Column fielder_6 converted to UInt32. Max value found is 693304.
-INFO - Column fielder_7 converted to UInt32. Max value found is 807799.
-INFO - Column fielder_8 converted to UInt32. Max value found is 808982.
-INFO - Column fielder_9 converted to UInt32. Max value found is 696100.
+INFO - Column pitcher_1 converted to Categorical. Found 689 categories.
+INFO - Column fielder_2_1 converted to Categorical. Found 88 categories.
+INFO - Column fielder_3 converted to Categorical. Found 127 categories.
+INFO - Column fielder_4 converted to Categorical. Found 142 categories.
+INFO - Column fielder_5 converted to Categorical. Found 137 categories.
+INFO - Column fielder_6 converted to Categorical. Found 99 categories.
+INFO - Column fielder_7 converted to Categorical. Found 180 categories.
+INFO - Column fielder_8 converted to Categorical. Found 127 categories.
+INFO - Column fielder_9 converted to Categorical. Found 168 categories.
 INFO - Column woba_denom converted to UInt8. Max value found is 1.
 INFO - Column babip_value converted to UInt8. Max value found is 1.
 INFO - Column iso_value converted to UInt8. Max value found is 3.

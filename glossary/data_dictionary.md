@@ -109,6 +109,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/release_speed_box.png">
+      <img src="assets/release_speed_freq.png">
     </td>
   </tr>
   <tr >
@@ -124,6 +126,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/release_pos_x_box.png">
+      <img src="assets/release_pos_x_freq.png">
     </td>
   </tr>
   <tr >
@@ -139,6 +143,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/release_pos_z_box.png">
+      <img src="assets/release_pos_z_freq.png">
     </td>
   </tr>
   <tr >
@@ -184,9 +190,27 @@
 <br></div>
     </td>
     <td >
-      UInt32
+      Categorical(ordering='physical')
     </td>
     <td >
+      <ul >
+        <li >
+          677587
+        </li>
+        <li >
+          660271
+        </li>
+        <li >
+          595978
+        </li>
+        <li >
+          671213
+        </li>
+        <li >
+          519203
+        </li>
+        ...
+      </ul>
     </td>
   </tr>
   <tr >
@@ -199,9 +223,27 @@
 <br></div>
     </td>
     <td >
-      UInt32
+      Categorical(ordering='physical')
     </td>
     <td >
+      <ul >
+        <li >
+          622491
+        </li>
+        <li >
+          657277
+        </li>
+        <li >
+          622072
+        </li>
+        <li >
+          668678
+        </li>
+        <li >
+          666200
+        </li>
+        ...
+      </ul>
     </td>
   </tr>
   <tr >
@@ -381,6 +423,8 @@
       UInt8
     </td>
     <td >
+      <img src="assets/zone_box.png">
+      <img src="assets/zone_freq.png">
     </td>
   </tr>
   <tr >
@@ -697,6 +741,8 @@
       UInt8
     </td>
     <td >
+      <img src="assets/hit_location_box.png">
+      <img src="assets/hit_location_freq.png">
     </td>
   </tr>
   <tr >
@@ -744,6 +790,8 @@
       UInt8
     </td>
     <td >
+      <img src="assets/balls_box.png">
+      <img src="assets/balls_freq.png">
     </td>
   </tr>
   <tr >
@@ -759,6 +807,8 @@
       UInt8
     </td>
     <td >
+      <img src="assets/strikes_box.png">
+      <img src="assets/strikes_freq.png">
     </td>
   </tr>
   <tr >
@@ -774,6 +824,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/pfx_x_box.png">
+      <img src="assets/pfx_x_freq.png">
     </td>
   </tr>
   <tr >
@@ -789,6 +841,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/pfx_z_box.png">
+      <img src="assets/pfx_z_freq.png">
     </td>
   </tr>
   <tr >
@@ -804,6 +858,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/plate_x_box.png">
+      <img src="assets/plate_x_freq.png">
     </td>
   </tr>
   <tr >
@@ -819,6 +875,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/plate_z_box.png">
+      <img src="assets/plate_z_freq.png">
     </td>
   </tr>
   <tr >
@@ -831,9 +889,27 @@
 <br></div>
     </td>
     <td >
-      UInt32
+      Categorical(ordering='physical')
     </td>
     <td >
+      <ul >
+        <li >
+          ""
+        </li>
+        <li >
+          687263
+        </li>
+        <li >
+          606192
+        </li>
+        <li >
+          681082
+        </li>
+        <li >
+          666969
+        </li>
+        ...
+      </ul>
     </td>
   </tr>
   <tr >
@@ -846,9 +922,27 @@
 <br></div>
     </td>
     <td >
-      UInt32
+      Categorical(ordering='physical')
     </td>
     <td >
+      <ul >
+        <li >
+          ""
+        </li>
+        <li >
+          687263
+        </li>
+        <li >
+          666158
+        </li>
+        <li >
+          453568
+        </li>
+        <li >
+          669397
+        </li>
+        ...
+      </ul>
     </td>
   </tr>
   <tr >
@@ -861,9 +955,27 @@
 <br></div>
     </td>
     <td >
-      UInt32
+      Categorical(ordering='physical')
     </td>
     <td >
+      <ul >
+        <li >
+          ""
+        </li>
+        <li >
+          666310
+        </li>
+        <li >
+          571771
+        </li>
+        <li >
+          665742
+        </li>
+        <li >
+          650490
+        </li>
+        ...
+      </ul>
     </td>
   </tr>
   <tr >
@@ -879,6 +991,8 @@
       UInt8
     </td>
     <td >
+      <img src="assets/outs_when_up_box.png">
+      <img src="assets/outs_when_up_freq.png">
     </td>
   </tr>
   <tr >
@@ -894,6 +1008,8 @@
       UInt8
     </td>
     <td >
+      <img src="assets/inning_box.png">
+      <img src="assets/inning_freq.png">
     </td>
   </tr>
   <tr >
@@ -932,6 +1048,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/hc_x_box.png">
+      <img src="assets/hc_x_freq.png">
     </td>
   </tr>
   <tr >
@@ -947,6 +1065,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/hc_y_box.png">
+      <img src="assets/hc_y_freq.png">
     </td>
   </tr>
   <tr >
@@ -962,6 +1082,8 @@
       UInt32
     </td>
     <td >
+      <img src="assets/fielder_2_box.png">
+      <img src="assets/fielder_2_freq.png">
     </td>
   </tr>
   <tr >
@@ -977,6 +1099,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/vx0_box.png">
+      <img src="assets/vx0_freq.png">
     </td>
   </tr>
   <tr >
@@ -992,6 +1116,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/vy0_box.png">
+      <img src="assets/vy0_freq.png">
     </td>
   </tr>
   <tr >
@@ -1007,6 +1133,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/vz0_box.png">
+      <img src="assets/vz0_freq.png">
     </td>
   </tr>
   <tr >
@@ -1022,6 +1150,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/ax_box.png">
+      <img src="assets/ax_freq.png">
     </td>
   </tr>
   <tr >
@@ -1037,6 +1167,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/ay_box.png">
+      <img src="assets/ay_freq.png">
     </td>
   </tr>
   <tr >
@@ -1052,6 +1184,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/az_box.png">
+      <img src="assets/az_freq.png">
     </td>
   </tr>
   <tr >
@@ -1067,6 +1201,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/sz_top_box.png">
+      <img src="assets/sz_top_freq.png">
     </td>
   </tr>
   <tr >
@@ -1082,6 +1218,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/sz_bot_box.png">
+      <img src="assets/sz_bot_freq.png">
     </td>
   </tr>
   <tr >
@@ -1094,6 +1232,8 @@
       UInt16
     </td>
     <td >
+      <img src="assets/hit_distance_sc_box.png">
+      <img src="assets/hit_distance_sc_freq.png">
     </td>
   </tr>
   <tr >
@@ -1109,6 +1249,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/launch_speed_box.png">
+      <img src="assets/launch_speed_freq.png">
     </td>
   </tr>
   <tr >
@@ -1124,6 +1266,8 @@
       Int8
     </td>
     <td >
+      <img src="assets/launch_angle_box.png">
+      <img src="assets/launch_angle_freq.png">
     </td>
   </tr>
   <tr >
@@ -1139,6 +1283,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/effective_speed_box.png">
+      <img src="assets/effective_speed_freq.png">
     </td>
   </tr>
   <tr >
@@ -1151,6 +1297,8 @@
       UInt16
     </td>
     <td >
+      <img src="assets/release_spin_rate_box.png">
+      <img src="assets/release_spin_rate_freq.png">
     </td>
   </tr>
   <tr >
@@ -1166,6 +1314,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/release_extension_box.png">
+      <img src="assets/release_extension_freq.png">
     </td>
   </tr>
   <tr >
@@ -1181,6 +1331,8 @@
       UInt32
     </td>
     <td >
+      <img src="assets/game_pk_box.png">
+      <img src="assets/game_pk_freq.png">
     </td>
   </tr>
   <tr >
@@ -1190,9 +1342,27 @@
     <td >
     </td>
     <td >
-      UInt32
+      Categorical(ordering='physical')
     </td>
     <td >
+      <ul >
+        <li >
+          622491
+        </li>
+        <li >
+          657277
+        </li>
+        <li >
+          622072
+        </li>
+        <li >
+          668678
+        </li>
+        <li >
+          666200
+        </li>
+        ...
+      </ul>
     </td>
   </tr>
   <tr >
@@ -1202,9 +1372,27 @@
     <td >
     </td>
     <td >
-      UInt32
+      Categorical(ordering='physical')
     </td>
     <td >
+      <ul >
+        <li >
+          663728
+        </li>
+        <li >
+          672275
+        </li>
+        <li >
+          669127
+        </li>
+        <li >
+          672515
+        </li>
+        <li >
+          663743
+        </li>
+        ...
+      </ul>
     </td>
   </tr>
   <tr >
@@ -1217,9 +1405,27 @@
 <br></div>
     </td>
     <td >
-      UInt32
+      Categorical(ordering='physical')
     </td>
     <td >
+      <ul >
+        <li >
+          664034
+        </li>
+        <li >
+          527038
+        </li>
+        <li >
+          676116
+        </li>
+        <li >
+          572233
+        </li>
+        <li >
+          669394
+        </li>
+        ...
+      </ul>
     </td>
   </tr>
   <tr >
@@ -1232,9 +1438,27 @@
 <br></div>
     </td>
     <td >
-      UInt32
+      Categorical(ordering='physical')
     </td>
     <td >
+      <ul >
+        <li >
+          593871
+        </li>
+        <li >
+          642731
+        </li>
+        <li >
+          680869
+        </li>
+        <li >
+          606466
+        </li>
+        <li >
+          650333
+        </li>
+        ...
+      </ul>
     </td>
   </tr>
   <tr >
@@ -1247,9 +1471,27 @@
 <br></div>
     </td>
     <td >
-      UInt32
+      Categorical(ordering='physical')
     </td>
     <td >
+      <ul >
+        <li >
+          668942
+        </li>
+        <li >
+          656305
+        </li>
+        <li >
+          605204
+        </li>
+        <li >
+          553993
+        </li>
+        <li >
+          681146
+        </li>
+        ...
+      </ul>
     </td>
   </tr>
   <tr >
@@ -1262,9 +1504,27 @@
 <br></div>
     </td>
     <td >
-      UInt32
+      Categorical(ordering='physical')
     </td>
     <td >
+      <ul >
+        <li >
+          641487
+        </li>
+        <li >
+          605113
+        </li>
+        <li >
+          669397
+        </li>
+        <li >
+          672695
+        </li>
+        <li >
+          641313
+        </li>
+        ...
+      </ul>
     </td>
   </tr>
   <tr >
@@ -1277,9 +1537,27 @@
 <br></div>
     </td>
     <td >
-      UInt32
+      Categorical(ordering='physical')
     </td>
     <td >
+      <ul >
+        <li >
+          686527
+        </li>
+        <li >
+          624424
+        </li>
+        <li >
+          664913
+        </li>
+        <li >
+          666971
+        </li>
+        <li >
+          650559
+        </li>
+        ...
+      </ul>
     </td>
   </tr>
   <tr >
@@ -1292,9 +1570,27 @@
 <br></div>
     </td>
     <td >
-      UInt32
+      Categorical(ordering='physical')
     </td>
     <td >
+      <ul >
+        <li >
+          677594
+        </li>
+        <li >
+          808982
+        </li>
+        <li >
+          668709
+        </li>
+        <li >
+          678489
+        </li>
+        <li >
+          665862
+        </li>
+        ...
+      </ul>
     </td>
   </tr>
   <tr >
@@ -1307,9 +1603,27 @@
 <br></div>
     </td>
     <td >
-      UInt32
+      Categorical(ordering='physical')
     </td>
     <td >
+      <ul >
+        <li >
+          571745
+        </li>
+        <li >
+          573262
+        </li>
+        <li >
+          671732
+        </li>
+        <li >
+          664983
+        </li>
+        <li >
+          541645
+        </li>
+        ...
+      </ul>
     </td>
   </tr>
   <tr >
@@ -1325,6 +1639,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/release_pos_y_box.png">
+      <img src="assets/release_pos_y_freq.png">
     </td>
   </tr>
   <tr >
@@ -1340,6 +1656,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/estimated_ba_using_speedangle_box.png">
+      <img src="assets/estimated_ba_using_speedangle_freq.png">
     </td>
   </tr>
   <tr >
@@ -1355,6 +1673,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/estimated_woba_using_speedangle_box.png">
+      <img src="assets/estimated_woba_using_speedangle_freq.png">
     </td>
   </tr>
   <tr >
@@ -1370,6 +1690,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/woba_value_box.png">
+      <img src="assets/woba_value_freq.png">
     </td>
   </tr>
   <tr >
@@ -1385,6 +1707,8 @@
       UInt8
     </td>
     <td >
+      <img src="assets/woba_denom_box.png">
+      <img src="assets/woba_denom_freq.png">
     </td>
   </tr>
   <tr >
@@ -1400,6 +1724,8 @@
       UInt8
     </td>
     <td >
+      <img src="assets/babip_value_box.png">
+      <img src="assets/babip_value_freq.png">
     </td>
   </tr>
   <tr >
@@ -1415,6 +1741,8 @@
       UInt8
     </td>
     <td >
+      <img src="assets/iso_value_box.png">
+      <img src="assets/iso_value_freq.png">
     </td>
   </tr>
   <tr >
@@ -1437,6 +1765,8 @@
       UInt8
     </td>
     <td >
+      <img src="assets/launch_speed_angle_box.png">
+      <img src="assets/launch_speed_angle_freq.png">
     </td>
   </tr>
   <tr >
@@ -1452,6 +1782,8 @@
       UInt8
     </td>
     <td >
+      <img src="assets/at_bat_number_box.png">
+      <img src="assets/at_bat_number_freq.png">
     </td>
   </tr>
   <tr >
@@ -1467,6 +1799,8 @@
       UInt8
     </td>
     <td >
+      <img src="assets/pitch_number_box.png">
+      <img src="assets/pitch_number_freq.png">
     </td>
   </tr>
   <tr >
@@ -1550,6 +1884,8 @@
       UInt8
     </td>
     <td >
+      <img src="assets/home_score_box.png">
+      <img src="assets/home_score_freq.png">
     </td>
   </tr>
   <tr >
@@ -1565,6 +1901,8 @@
       UInt8
     </td>
     <td >
+      <img src="assets/away_score_box.png">
+      <img src="assets/away_score_freq.png">
     </td>
   </tr>
   <tr >
@@ -1580,6 +1918,8 @@
       UInt8
     </td>
     <td >
+      <img src="assets/bat_score_box.png">
+      <img src="assets/bat_score_freq.png">
     </td>
   </tr>
   <tr >
@@ -1595,6 +1935,8 @@
       UInt8
     </td>
     <td >
+      <img src="assets/fld_score_box.png">
+      <img src="assets/fld_score_freq.png">
     </td>
   </tr>
   <tr >
@@ -1610,6 +1952,8 @@
       UInt8
     </td>
     <td >
+      <img src="assets/post_away_score_box.png">
+      <img src="assets/post_away_score_freq.png">
     </td>
   </tr>
   <tr >
@@ -1625,6 +1969,8 @@
       UInt8
     </td>
     <td >
+      <img src="assets/post_home_score_box.png">
+      <img src="assets/post_home_score_freq.png">
     </td>
   </tr>
   <tr >
@@ -1640,6 +1986,8 @@
       UInt8
     </td>
     <td >
+      <img src="assets/post_bat_score_box.png">
+      <img src="assets/post_bat_score_freq.png">
     </td>
   </tr>
   <tr >
@@ -1652,6 +2000,8 @@
       UInt8
     </td>
     <td >
+      <img src="assets/post_fld_score_box.png">
+      <img src="assets/post_fld_score_freq.png">
     </td>
   </tr>
   <tr >
@@ -1722,6 +2072,8 @@
       UInt16
     </td>
     <td >
+      <img src="assets/spin_axis_box.png">
+      <img src="assets/spin_axis_freq.png">
     </td>
   </tr>
   <tr >
@@ -1737,6 +2089,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/delta_home_win_exp_box.png">
+      <img src="assets/delta_home_win_exp_freq.png">
     </td>
   </tr>
   <tr >
@@ -1752,6 +2106,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/delta_run_exp_box.png">
+      <img src="assets/delta_run_exp_freq.png">
     </td>
   </tr>
   <tr >
@@ -1765,6 +2121,8 @@
       Float64
     </td>
     <td >
+      <img src="assets/bat_speed_box.png">
+      <img src="assets/bat_speed_freq.png">
     </td>
   </tr>
   <tr >
@@ -1778,6 +2136,20 @@
     </td>
     <td >
       Float64
+    </td>
+    <td >
+      <img src="assets/swing_length_box.png">
+      <img src="assets/swing_length_freq.png">
+    </td>
+  </tr>
+  <tr >
+    <td >
+      swing_event
+    </td>
+    <td >
+    </td>
+    <td >
+      Boolean
     </td>
     <td >
     </td>

@@ -1,7 +1,9 @@
-from io import StringIO
-import traceback
+import matplotlib.pyplot as plt
+from multiprocessing import Process
 from pathlib import Path
+import seaborn as sns
 import polars as pl
+import os
 
 class HtmlBuilder:
   def __init__(self):
@@ -53,39 +55,6 @@ class HtmlBuilder:
   def text(self, content):
     self.html += f"{self._add_indent()}{content}\n"
 
-# class HtmlBuilder:
-#   def __init__(self, output, tag=None, **properties):
-#     self.output = output
-#     self.tag = tag
-#     self.properties = properties
-#     self.children = []
-
-#   def add(self, tag, text=None, **properties):
-#     ss = StringIO()
-#     self.children.append(ss)
-#     if text is None:
-#       element = HtmlBuilder(ss, tag, **properties)
-#       return element
-#     self._tag(tag, text, ss)
-#     return self
-
-#   def _tag(self, tag, value, output):
-#     if tag is not None:
-#       output.write(f"<{tag} {' '.join(key+'='+value for key, value in self.properties.items())}>")
-#     output.write(value)
-#     if tag is not None:
-#       self.output.write(f"</{tag}>")
-
-#   def __enter__(self):
-#     return self
-
-#   def __exit__(self, exc_type, exc_value, exc_traceback):
-#     if exc_type:
-#       print("An exception has occurred: ", exc_value)
-#       traceback.print_tb(exc_traceback)
-#       return False
-#     self._tag(self.tag, "".join(map(lambda x: x.getvalue(), self.children)), self.output)
-
 def _parse_description_lookup(definition_file):
   """
   Parse the contents of the data_definitions markdown file into a dictionary of column names
@@ -104,12 +73,25 @@ def _parse_description_lookup(definition_file):
         lookup[field] = lookup[field] + line + "<br>"
   return lookup
 
-def build_description_table(df, definition_file, output_file, short_cat_size=30, long_cat_show_size=5):
+def _build_numeric_plots(df, path):
+  for column in df:
+    if column.dtype.is_numeric():
+      sns.boxplot(data=df, x=column.name)
+      plt.savefig(path / f"{column.name}_box.png")
+      plt.close()
+
+      sns.histplot(data=df, x=column.name)
+      plt.savefig(path / f"{column.name}_freq.png")
+      plt.close()
+
+def build_description_table(df, definition_file, output_file, short_cat_size=30, long_cat_show_size=5, build_plots=False):
   """
   Create an HTML file with a data dictionary describing the dataframe with the definitions
   specified in the definition file.
   """
   lookup = _parse_description_lookup(definition_file)
+  if build_plots:
+    _build_numeric_plots(df, Path(os.path.dirname(output_file)) / "assets")
   with HtmlBuilder() as html:
     with html.tag("table", border="1"):
       with html.tag("tr"):
@@ -132,14 +114,13 @@ def build_description_table(df, definition_file, output_file, short_cat_size=30,
                 show_size = long_cat_show_size if len(uniq) > short_cat_size else short_cat_size
                 for opt in uniq[:show_size]:
                   with html.tag("li"):
-                    if len(opt) == 0:
+                    if opt is None or len(opt) == 0:
                       html.text("\"\"")
                     else:
                       html.text(opt)
                 if len(uniq) > show_size:
                   html.text("...")
+            elif column.dtype.is_numeric():
+              html.text("<img src=\"{path}\">".format(path=Path('assets', f"{column.name}_box.png")))
+              html.text("<img src=\"{path}\">".format(path=Path('assets', f"{column.name}_freq.png")))
     html.save(output_file)
-
-def build_categorical_documentation(df, path, *cols):
-  for col in cols:
-    df[col].unique().write_csv(Path(path) / f"{col}.csv")
