@@ -1,4 +1,5 @@
 import polars as pl
+from numpy import arange
 from .logger import logger
 
 SWING_EVENTS = {
@@ -12,6 +13,11 @@ SWING_EVENTS = {
   "bunt_foul_tip"
 }
 
+def bins(col, increment, alias):
+  mn = col.min()
+  mx = col.max()
+  return pl.col(col.name).cut(arange(mn, mx, increment), labels=list(map(str, arange(mn, mx+increment, increment)))).alias(alias)
+
 def read_data(arrow_file):
   """
   Read the data from an arrow file.
@@ -24,7 +30,10 @@ def read_data(arrow_file):
   return (df.select([col for col in df.columns if df[col].count() != 0 and len(df[col].value_counts()) > 1])
             .with_columns((
               pl.col("game_date").str.to_date("%Y-%m-%d"),
-              pl.col("description").is_in(SWING_EVENTS).alias("swing_event")))
+              pl.col("description").is_in(SWING_EVENTS).alias("swing_event"),
+              pl.col("description").eq("hit_into_play").alias("hit_into_play"),
+              bins(df["bat_speed"], 2.0, "bat_speed_bin"),
+              bins(df["swing_length"], 0.1, "swing_length_bin")))
             .pipe(lambda x: x.with_columns((downsize_dtype(column) for column in x)))
             .filter(~pl.col("swing_event") | (pl.col("bat_speed").is_not_null() & pl.col("swing_length").is_not_null())))
 

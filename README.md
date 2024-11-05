@@ -42,6 +42,8 @@ The analysis should involve bat speed and swing length to study any topic relate
 
 ### Ideas
 
+what is the ideal bat speed and swing length for each pitch type?
+
 1. Swing Speed vs. Play Outcome Analysis
 Objective: Identify how swing speed correlates with play outcomes (e.g., hits, home runs, strikeouts).
 Analysis:

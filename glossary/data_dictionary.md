@@ -2167,4 +2167,76 @@
     <td >
     </td>
   </tr>
+  <tr >
+    <td >
+      hit_into_play
+    </td>
+    <td >
+    </td>
+    <td >
+      Boolean
+    </td>
+    <td >
+    </td>
+  </tr>
+  <tr >
+    <td >
+      bat_speed_bin
+    </td>
+    <td >
+    </td>
+    <td >
+      Categorical(ordering='physical')
+    </td>
+    <td >
+      <ul >
+        <li >
+          ""
+        </li>
+        <li >
+          0.851208400756372
+        </li>
+        <li >
+          2.851208400756372
+        </li>
+        <li >
+          4.851208400756372
+        </li>
+        <li >
+          6.851208400756371
+        </li>
+        ...
+      </ul>
+    </td>
+  </tr>
+  <tr >
+    <td >
+      swing_length_bin
+    </td>
+    <td >
+    </td>
+    <td >
+      Categorical(ordering='physical')
+    </td>
+    <td >
+      <ul >
+        <li >
+          ""
+        </li>
+        <li >
+          0.30587
+        </li>
+        <li >
+          0.40586999999999995
+        </li>
+        <li >
+          0.5058699999999999
+        </li>
+        <li >
+          0.6058699999999999
+        </li>
+        ...
+      </ul>
+    </td>
+  </tr>
 </table>
